@@ -18,8 +18,10 @@ This repository contains a **ROS2-controlled gripper robotic arm** fully simulat
 ## Demo
 
 
-![Gripper Robotic Arm](im1.png)
-![Gripper Robotic Arm](im2.png)
+![Gripper Robotic Arm](images/im1.png)
+
+
+![Gripper Robotic Arm](images/im2.png)
 > The gripper can pick up objects and move them around the PyBullet simulation environment.
 
 ---
