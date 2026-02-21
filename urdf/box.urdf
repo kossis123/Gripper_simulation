@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<robot name="box">
+<material name="red">
+  <color rgba="0 1 0 1"/>
+</material>
+  <link name="as">
+
+    <visual>
+      <geometry>
+        <box size="0.1 0.06 0.3"/>
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <material name="red"/>   
+    </visual>
+
+    <collision>
+      <geometry>
+        <box size="0.1 0.06 0.3"/>
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </collision>
+
+    <inertial>
+      <mass value="0.1"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia 
+        ixx="0.0000417" ixy="0.0" ixz="0.0"
+        iyy="0.0000417" iyz="0.0"
+        izz="0.0000417"/>
+    </inertial>
+     <surface>
+            <friction>
+                <ode>
+                    <mu>10</mu>          <!-- lateral friction -->
+                    <mu2>10</mu2>
+                </ode>
+            </friction>
+        </surface>
+
+  </link>
+</robot>
